@@ -101,8 +101,8 @@
         <h2 class="form-title">Jonathan's Family store</h2>
         <form id="clothingSalesForm">
             <div class="form-group">
-                <label class="form-label" for="poin">اسم البائع</label>
-                <input type="text" id="poin" name="points" class="form-input" required>
+                <label class="form-label" for="بائع">اسم البائع</label>
+                <input type="text" id="بائع" name="seller" class="form-input" required>
             </div>
 
             <div class="form-group">
@@ -137,10 +137,10 @@
             
             // Send data to Google Apps Script with specified order
             var orderedData = {
-                بائع: data.points,
-                customer: data.customer,
-                clothesType: data.clothesType,
-                price: data.price
+                بائع: data.seller,
+                مشتري: data.customer,
+                ملابس: data.clothesType,
+                سعر: data.price
             };
             
             fetch('https://script.google.com/macros/s/AKfycbxVC_Hlv04Ig3bEQIZXDYSqUx-BTFqWZ2liSfg2aIGlUH2f1D0Lda1PFdgMdbhyfRkw/exec', {
