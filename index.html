@@ -101,8 +101,8 @@
         <h2 class="form-title">Jonathan's Family store</h2>
         <form id="clothingSalesForm">
             <div class="form-group">
-                <label class="form-label" for="1">اسم البائع</label>
-                <input type="text" id="1" name="1" class="form-input" required>
+                <label class="form-label" for="seller">اسم البائع</label>
+                <input type="text" id="seller" name="seller" class="form-input" required>
             </div>
 
             <div class="form-group">
@@ -137,7 +137,7 @@
             
             // Send data to Google Apps Script with specified order
             var orderedData = {
-                1: data.1,
+                seller: data.seller,
                 customer: data.customer,
                 clothesType: data.clothesType,
                 price: data.price
